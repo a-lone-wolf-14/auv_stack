@@ -1,0 +1,15 @@
+serial:
+  thruster_port: "/dev/ttyS4"
+  thruster_baud: 115200
+  vectornav_port: "/dev/ttyUSB0"
+  bar30_port: "/dev/ttyUSB1"
+  baudrate: 115200
+
+cameras:
+  front: "/dev/video0"
+  bottom: "/dev/video2"
+
+pwm_limits:
+  min: 1250
+  max: 1750
+  neutral: 1500
