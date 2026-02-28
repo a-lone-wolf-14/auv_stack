@@ -15,12 +15,22 @@ class VectorNavNode(Node):
 
     def read_imu(self):
         ypr = Registers.Attitude.YawPitchRoll()
+        ang_vel = Registers.IMU.Gyro()
+        lin_accel = Registers.IMU.Accel()
         self.sensor.readRegister(ypr)
+        self.sensor.readRegister(ang_vel)
+        self.sensor.readRegister(lin_accel)
 
         msg = Imu()
         msg.orientation.z = ypr.yaw
         msg.orientation.y = ypr.pitch
         msg.orientation.x = ypr.roll
+        msg.angular_velocity.x = ang_vel.gyroX
+        msg.angular_velocity.y = ang_vel.gyroY
+        msg.angular_velocity.z = ang_vel.gyroZ
+        msg.linear_acceleration.x = lin_accel.accelX
+        msg.linear_acceleration.y = lin_accel.accelY
+        msg.linear_acceleration.z = lin_accel.accelZ
 
         self.pub.publish(msg)
 

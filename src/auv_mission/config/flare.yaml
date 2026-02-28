@@ -1,0 +1,11 @@
+flare_task:
+
+  avoid:
+    detection_class: 1
+    avoid_distance: 1.5
+    yaw_gain: 0.6
+    forward_speed: 0.4
+
+  collide:
+    forward_speed: 0.6
+    collision_timeout: 6

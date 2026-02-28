@@ -1,0 +1,10 @@
+aruco_task:
+
+  dictionary: DICT_4X4_50
+
+  scan:
+    marker_count: 4
+    surge_speed: 0.3
+
+  docking:
+    descend_speed: 0.2

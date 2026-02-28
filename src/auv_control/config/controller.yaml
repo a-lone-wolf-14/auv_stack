@@ -1,5 +1,5 @@
 pid:
-  heave: {kp: 1.5, ki: 0.2, kd: 0.05, n: 100}
-  yaw:   {kp: 2.0, ki: 0.0, kd: 0.1, n: 100}
-  pitch: {kp: 1.0, ki: 0.0, kd: 0.0, n: 100}
-  roll:  {kp: 1.0, ki: 0.0, kd: 0.0, n: 100}
+  heave:   {pikp: 0.8, piki: 0.06, pdkp: 50.0, pdkd: 10.0, n: 20}
+  yaw:   {pikp: 2.0, piki: 0.0, pdkp: 0.1, pdkd: 0.0, n: 100}
+  pitch:   {pikp: 0.7, piki: 0.04, pdkp: 48.0, pdkd: 20.0, n: 5}
+  roll:   {pikp: 0.7, piki: 0.04, pdkp: 37.0, pdkd: 5.0, n: 12}

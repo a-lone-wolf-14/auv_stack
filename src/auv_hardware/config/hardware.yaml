@@ -1,7 +1,7 @@
 serial:
   thruster_port: "/dev/ttyS4"
   thruster_baud: 115200
-  vectornav_port: "/dev/ttyUSB0"
+  vectornav_port: "/dev/vn100"
   bar30_port: "/dev/ttyUSB1"
   baudrate: 115200
 

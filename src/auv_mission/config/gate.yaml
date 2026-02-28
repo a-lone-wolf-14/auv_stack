@@ -1,0 +1,11 @@
+gate_task:
+  class_id: 0
+
+  alignment:
+    max_center_error: 0.05
+    yaw_gain: 0.5
+    forward_speed: 0.3
+
+  pass:
+    forward_speed: 0.5
+    pass_time: 4.0
